@@ -119,15 +119,15 @@ export const Table = () => {
             name: '',
             id: "editbtn",
             selector: row => edit === row.id ?
-                <button onClick={() => saveData(row)}>OK</button>
-                : <button
+                <button id='tableButton'onClick={() => saveData(row)}>OK</button>
+                : <button id='tableButton'
                     onClick={() => editRow(row)}
                 >editar</button> 
         },
         {
             name: '',
             id: "deletebtn",
-            selector: row => <button
+            selector: row => <button id='tableButton'
             // onClick={() => deleteRow(row)}
             >Eliminar</button>
         },

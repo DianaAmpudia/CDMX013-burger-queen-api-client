@@ -9,7 +9,7 @@ const ButtonsMenu = () => {
         <section className='menuBtn'>
             <button id="emplBtn">EMPLEADOS</button><br></br>
             <button id="prodBtn">PRODUCTOS</button>
-            <Logo />
+            <div className='logoAdmin'><Logo /></div>
             <button id="exit">SALIR</button>
 
         </section>
@@ -32,7 +32,7 @@ const InputEmployee = () => {
     )
 }
 
-const Admin = () => {
+export const Admin = () => {
     return (
         <div className='backAdmin'>
             <ButtonsMenu />
@@ -41,4 +41,3 @@ const Admin = () => {
     )
 }
 
-export default Admin
