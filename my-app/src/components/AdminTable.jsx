@@ -3,6 +3,9 @@ import * as React from 'react';
 import "./style/admin.css";
 import { useState, useEffect } from 'react';
 import DataTable from 'react-data-table-component'
+import DeleteIcon from '@mui/icons-material/Delete';
+import ModeEditOutlineIcon from '@mui/icons-material/ModeEditOutline';
+import DoneIcon from '@mui/icons-material/Done';
 
 export const Table = () => {
     let [users, setUsers] = useState([]);
@@ -119,17 +122,17 @@ export const Table = () => {
             name: '',
             id: "editbtn",
             selector: row => edit === row.id ?
-                <button id='tableButton'onClick={() => saveData(row)}>OK</button>
-                : <button id='tableButton'
+                <DoneIcon onClick={() => saveData(row)}>OK</DoneIcon>
+                : <ModeEditOutlineIcon 
                     onClick={() => editRow(row)}
-                >editar</button> 
+                >editar</ModeEditOutlineIcon> 
         },
         {
             name: '',
             id: "deletebtn",
-            selector: row => <button id='tableButton'
+            selector: row => <DeleteIcon 
             // onClick={() => deleteRow(row)}
-            >Eliminar</button>
+            >Eliminar</DeleteIcon>
         },
     ]
     return (

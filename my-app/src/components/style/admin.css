@@ -80,7 +80,7 @@
 #exit,
 #prodBtn,
 #addEmployee,
-#emplBtn, #tableButton {
+#emplBtn {
   background-color: #C77136;
   color: white;
   border-radius: 1vh;
@@ -128,7 +128,3 @@
   height: 60vh;
 }
 
-#tableButton {
-  width: 6.5vw;
-  height: 4.5vh;
-}
