@@ -16,7 +16,7 @@ export default function PendingItem({ item, deleteOrder, buttonDone, addKeyProdu
             <section style={{ background: item.status === 'pending' ? "#EAAC40" : "#087711" }}className="headerOrder">
                 <button key={item.id} onClick={() => deleteOrder(item)}> <CloseIcon /></button>
                 <p> {item.name}</p>
-               {item.status==='pending'?<p>Llego:{item.hour}</p>:null} 
+               {item.status==='pending'?<p>Llegó:{item.hour}</p>:null} 
             </section>
             <div>
                 {item.items.map((element) =>
